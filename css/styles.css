@@ -15,7 +15,7 @@ img {
     height: 100%;
     object-fit: cover;
     float: right;
-    filter: brightness(.2);
+    /* filter: brightness(.2); */
 }
 
 h1 {
@@ -35,12 +35,28 @@ nav {
     z-index: -5;
 }
 
+@media only screen and (min-width: 800px) {
+    img {
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+    }
+    article {
+        padding: 10px;
+    }
+  }
+
 article {
+    position: fixed;
+    right: 1vmin;
+    width: 50%;
+    max-width: 500px;
     color: whitesmoke;
     font-size: 20px;
     text-align: center;
-    padding: 10vmin;
-    max-width: 500px;
+    width: 200px;
+    padding: 5px;
+    }
 }
 
 .line {
